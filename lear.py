@@ -256,3 +256,72 @@ def compute_lcm(x, y):
 num1 = 54
 num2 = 24
 print
+
+#list sliciing 
+
+my_list = [1, 2, 3, 4, 5]
+
+print(my_list[:])
+
+
+#program for sort the values of dictonaries
+
+dt = {5:4, 1:6, 6:3}
+
+sorted_dt = {key: value for key, value in sorted(dt.items(), key=lambda item: item[1])}
+
+print(sorted_dt)
+
+
+#python program to join two lists
+
+list_1 = [1, 'a']
+list_2 = [3, 4, 5]
+
+list_joined = list_1 + list_2
+print(list_joined)
+
+
+#python program to get a substring of a string
+my_string = "I love python."
+
+# prints "love"
+print(my_string[2:6])
+
+# prints "love python."
+print(my_string[2:])
+
+# prints "I love python"
+print(my_string[:-1])
+
+
+#program for count the occurance of a item in a list
+freq = ['a', 1, 'a', 4, 3, 2, 'a'].count('a')
+print(freq)
+
+
+#program to reverse a number
+
+num = 1234
+reversed_num = 0
+
+while num != 0:
+    digit = num % 10
+    reversed_num = reversed_num * 10 + digit
+    num //= 10
+
+print("Reversed Number: " + str(reversed_num))
+
+
+#program to captailze first lettter
+
+my_string = "programiz is Lit"
+
+print(my_string[0].upper() + my_string[1:])
+
+
+#Python program to remove dupblicates in a list
+
+list_1 = [1, 2, 1, 4, 6]
+
+print(list(set(list_1)))
